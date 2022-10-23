@@ -13,4 +13,6 @@ public class MySQLContext : DbContext
     {
         this.Database.EnsureCreated();
     }
+
+    public DbSet<Product> Products => Set<Product>();
 }
